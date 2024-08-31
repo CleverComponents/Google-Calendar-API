@@ -314,8 +314,8 @@ const
   jsonDest = '{"kind": "calendar#events", "etag": "\"1441859420383000\"", "summary": "Праздники РФ", ' +
 '"description": "Праздники и памятные даты Российской Федерации", "updated": 2015-09-10T04:30:20.383Z, ' +
 '"timeZone": "UTC", "accessRole": "reader", "nextSyncToken": "CJjOxfTQ68cCEJjOxfTQ68cCGAE=", ' +
-'"items": [{"kind": "calendar#event", "etag": "\"2778501856000000\"", "id": "20140102_60o30dj26oo30c1g60o30dr4ck", ' +
-'"sequence": 0}, {"kind": "calendar#event", "etag": "\"2778501856000000\"", "id": "20140108_60o30dj2c8o30c1g60o30dr4ck", "sequence": 0}]}';
+'"items": [{"kind": "calendar#event", "etag": "\"2778501856000000\"", "id": "20140102_60o30dj26oo30c1g60o30dr4ck"}, ' +
+'{"kind": "calendar#event", "etag": "\"2778501856000000\"", "id": "20140108_60o30dj2c8o30c1g60o30dr4ck"}]}';
 
 var
   serializer: TJsonSerializer;

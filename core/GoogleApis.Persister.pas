@@ -106,6 +106,8 @@ type
 
 implementation
 
+{$I clVer.inc}
+
 { TGoogleOAuthCredential }
 
 procedure TGoogleOAuthCredential.Abort;
@@ -248,7 +250,13 @@ begin
     begin
       Result := '?' + Result;
     end;
+
+{$IFDEF CLVERSION94}
+    Result := TclUrlEncoder.Encode(AUri, 'UTF-8') + Result;
+{$ELSE}
     Result := TclUrlParser.EncodeUrl(AUri, 'UTF-8') + Result;
+{$ENDIF}
+
   finally
     req.Free();
   end;
